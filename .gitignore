@@ -1,0 +1,12 @@
+**/.DS_Store
+**/.idea
+
+**/*.iml
+**/*.log
+**/package-lock.json
+
+**/node_modules
+**/target
+**/dist
+
+**/kiegroup-all
