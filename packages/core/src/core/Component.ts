@@ -16,6 +16,9 @@
 
 import * as React from "react";
 
+/**
+ * Core component. Provides basic low-level lifecycle methods for AppFormer components.
+ */
 export abstract class Component {
   public readonly core_componentId: string;
   public readonly type: string;

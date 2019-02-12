@@ -16,6 +16,9 @@
 
 import { Component } from "./Component";
 
+/**
+ * Screen component API. Implement this class to create a Screen.
+ */
 export abstract class Screen extends Component {
   public af_componentTitle?: string = undefined;
   public af_subscriptions: Map<string, ((event: any) => void)> = new Map();

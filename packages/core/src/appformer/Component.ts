@@ -17,6 +17,10 @@
 import { Component as CoreComponent } from "../core";
 import { Element } from "../core";
 
+/**
+ * Base AppFormer.js component. It contains the default life-cycle methods that are common to all components.
+ *
+ */
 export abstract class Component extends CoreComponent {
   public readonly af_componentId: string;
   public af_subscriptions: Map<string, ((event: any) => void)> = new Map();

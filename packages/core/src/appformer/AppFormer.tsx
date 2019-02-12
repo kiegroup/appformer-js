@@ -19,40 +19,39 @@ import { Element } from "../core";
 import { Screen } from "./Screen";
 import { Perspective } from "./Perspective";
 
+/**
+ * AppFormer.js public API.
+ *
+ */
 export class AppFormer {
   public init(container: HTMLElement, callback: () => void): AppFormer {
     return this;
   }
 
-  public registerScreen(screen: Screen): void {
-    //
-  }
+  // tslint:disable-next-line
+  public registerScreen(screen: Screen): void {}
 
-  public registerPerspective(perspective: Perspective): void {
-    //
-  }
+  // tslint:disable-next-line
+  public registerPerspective(perspective: Perspective): void {}
 
-  public goTo(af_componentId: string, args?: any): void {
-    //
-  }
+  // tslint:disable-next-line
+  public goTo(af_componentId: string, args?: any): void {}
 
+  // tslint:disable-next-line
   public translate(tkey: string, args: string[]): string {
     throw new Error("Not implemented");
   }
 
-  public render(element: Element, container: HTMLElement, callback: () => void): void {
-    //
-  }
+  // tslint:disable-next-line
+  public render(element: Element, container: HTMLElement, callback: () => void): void {}
 
-  public fireEvent(obj: any): void {
-    //
-  }
+  // tslint:disable-next-line
+  public fireEvent(obj: any): void {}
 
   public rpc(path: string, args: any[]): Promise<string> {
     throw new Error("Not implemented");
   }
 
-  public close(af_componentId: string): void {
-    //
-  }
+  // tslint:disable-next-line
+  public close(af_componentId: string): void {}
 }

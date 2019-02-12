@@ -20,6 +20,11 @@ import { MarshallingContext } from "./MarshallingContext";
 import { UnmarshallingContext } from "./UnmarshallingContext";
 import { ErraiObjectConstants } from "./model/ErraiObjectConstants";
 
+/**
+ * Serializes a Portable<T> object into an Errai json.
+ * @param obj
+ */
+
 export function marshall<T>(obj: Portable<T>): string | null {
   if (obj === null || obj === undefined) {
     return null;
@@ -29,10 +34,15 @@ export function marshall<T>(obj: Portable<T>): string | null {
   return JSON.stringify(marshaller.marshall(obj, new MarshallingContext()));
 }
 
-export function unmarshall<T>(
-  json: string,
-  oracle: Map<string, () => Portable<any>>
-): Portable<T> | null | void {
+/**
+ * Deserializes an Errai json creating a Portable<T> object.
+ *
+ * @param json
+ * The Errai json.
+ * @param oracle
+ * A map containing fqcns as keys and a function returning an empty Portable<T> associated with that fqcn.
+ */
+export function unmarshall<T>(json: string, oracle: Map<string, () => Portable<any>>): Portable<T> | null | void {
   if (json === null || json === undefined) {
     return undefined;
   }

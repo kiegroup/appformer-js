@@ -16,6 +16,9 @@
 
 import { Component } from "./Component";
 
+/**
+ * Perspective component API. Implement this class to create a Perspective.
+ */
 export abstract class Perspective extends Component {
   public af_name: string;
   public af_perspectiveScreens: string[] = [];
