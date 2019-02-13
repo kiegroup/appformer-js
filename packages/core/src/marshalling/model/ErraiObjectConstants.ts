@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-export enum ErraiObjectConstants {
+export const enum ErraiObjectConstants {
   ENCODED_TYPE = "^EncodedType",
   OBJECT_ID = "^ObjectID",
   NUM_VAL = "^NumVal",

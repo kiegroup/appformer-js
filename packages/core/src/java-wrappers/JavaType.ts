@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-export enum JavaType {
+export const enum JavaType {
   BYTE = "java.lang.Byte",
   DOUBLE = "java.lang.Double",
   FLOAT = "java.lang.Float",

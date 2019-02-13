@@ -35,7 +35,7 @@ export class DisplayInfo {
   }
 }
 
-export enum ContextDisplayMode {
+export const enum ContextDisplayMode {
   SHOW = "SHOW",
   HIDE = "HIDE"
 }

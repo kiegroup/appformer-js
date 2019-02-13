@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-export enum ComponentTypes {
+export const enum ComponentTypes {
   SCREEN = "screen",
   PERSPECTIVE = "perspective",
   APPFORMER = "appformer",

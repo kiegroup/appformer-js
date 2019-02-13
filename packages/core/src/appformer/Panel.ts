@@ -17,12 +17,12 @@
 import { Part } from "./Part";
 import { DisplayInfo } from "./DisplayInfo";
 
-export enum PanelType {
+export const enum PanelType {
   MULTI_LIST = "org.uberfire.client.workbench.panels.impl.MultiListWorkbenchPanelPresenter",
   STATIC = "org.uberfire.client.workbench.panels.impl.StaticWorkbenchPanelPresenter"
 }
 
-export enum CompassPosition {
+export const enum CompassPosition {
   NONE = "NONE",
   NORTH = "NORTH",
   SOUTH = "SOUTH",
