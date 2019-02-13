@@ -33,6 +33,9 @@ export enum CompassPosition {
   CENTER = "CENTER"
 }
 
+/**
+ * Panel of a CompassLayoutPerspective
+ */
 export class Panel {
   private _position: CompassPosition;
   private _width: number = -1;

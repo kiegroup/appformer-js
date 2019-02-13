@@ -24,34 +24,90 @@ import { Perspective } from "./Perspective";
  *
  */
 export class AppFormer {
+
+  /**
+   * Starts an AppFormer instance.
+   * @param container
+   * The DOM element on which AppFormer will start into
+   * @param callback
+   * Function to be executed after AppFormer init is complete
+   */
   public init(container: HTMLElement, callback: () => void): AppFormer {
     return this;
   }
 
+  /**
+   * Registers a Screen component.
+   * @param screen
+   */
   // tslint:disable-next-line
   public registerScreen(screen: Screen): void {}
 
+  /**
+   * Registers a Perspective component
+   * @param perspective
+   */
   // tslint:disable-next-line
   public registerPerspective(perspective: Perspective): void {}
 
+  /**
+   * Renders the component with the corresponding id.
+   * @param af_componentId
+   * The component id
+   * @param args
+   * Arbitrary arguments to be used by the component
+   */
   // tslint:disable-next-line
   public goTo(af_componentId: string, args?: any): void {}
 
+  /**
+   * Translates a bundle key
+   * @param tkey
+   * The bundle key
+   * @param args
+   * The arguments to this bundle
+   */
   // tslint:disable-next-line
   public translate(tkey: string, args: string[]): string {
     throw new Error("Not implemented");
   }
 
+  /**
+   * Renders a component.
+   * @param element
+   * The component to be rendered
+   * @param container
+   * The DOM element on which the component will be rendered.
+   * @param callback
+   * Function to be executed after the component is done rendering.
+   */
   // tslint:disable-next-line
   public render(element: Element, container: HTMLElement, callback: () => void): void {}
 
+  /**
+   * Fires an event using Errai bus.
+   * @param obj
+   * The event object.
+   */
   // tslint:disable-next-line
   public fireEvent(obj: any): void {}
 
+  /**
+   * Executes an RPC call to an Errai Remote.
+   * @param path
+   * The Errai bus RPC path
+   * @param args
+   * The arguments to this RPC
+   */
   public rpc(path: string, args: any[]): Promise<string> {
     throw new Error("Not implemented");
   }
 
+  /**
+   * Unrenders a component
+   * @param af_componentId
+   * The component id.
+   */
   // tslint:disable-next-line
   public close(af_componentId: string): void {}
 }

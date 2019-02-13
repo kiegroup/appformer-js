@@ -22,6 +22,9 @@ import { DisplayInfo } from "./DisplayInfo";
 import { Part } from "./Part";
 import { Element } from "../core";
 
+/**
+ * Special type of Perspective. It allows its UI to be defined by parts and panels.
+ */
 export class CompassLayoutPerspective extends Perspective {
   private _af_menus?: Menu[] = undefined;
   private _af_toolbar?: Toolbar = undefined;

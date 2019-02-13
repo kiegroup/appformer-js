@@ -16,6 +16,9 @@
 
 import { DisplayInfo } from "./DisplayInfo";
 
+/**
+ * Part of a CompassLayoutPerspective
+ */
 export class Part {
   private _placeName: string;
   private _displayInfo: DisplayInfo = new DisplayInfo();
