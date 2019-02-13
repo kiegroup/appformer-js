@@ -11,11 +11,13 @@ Usage
 ===
 Simply add its dependency on an existing Maven module and the Annotation Processor present will scan for `@Remote`- and `@Portable`-annotated classes. 
 
-For `lib` modules, files containing the Full Qualified Class Names (fqcn) of the annotated types will be created.
+ - For `lib` modules, files containing the Full Qualified Class Names (fqcn) of the annotated types will be created.
  
 > **NOTE:** `lib` modules don't need any special configuration. Just the dependency will suffice.
 
-For `app` modules, TypeScript code will be generated and published to your local NPM registry running on `http://localhost:4873`. `@Portable` classes will be present on `@kiegroup-ts-generated/[my-module]` and `@Remote` ones will be on `@kiegroup-ts-generated/[my-module]-rpc`. We recommend using [verdaccio](https://github.com/verdaccio/verdaccio) as your local npm registry. To install it simply run `npm install -g verdaccio`. To run it, simply run `verdaccio`. The `app` module must have at least one class annotated with `@EntryPoint`, `@Portable`, or `@Remote`.
+- For `app` modules, TypeScript code will be generated and published to your local NPM registry running on `http://localhost:4873`. `@Portable` classes will be present on `@kiegroup-ts-generated/[my-module]` and `@Remote` ones will be on `@kiegroup-ts-generated/[my-module]-rpc`. 
+
+> **NOTE:** We recommend using [verdaccio](https://github.com/verdaccio/verdaccio) as your local npm registry. To install it simply run `npm install -g verdaccio`. To run it, simply run `verdaccio`. The `app` module must have at least one class annotated with `@EntryPoint`, `@Portable`, or `@Remote`.
 
 > **NOTE:** `app` modules require a special configuration to actually generate and lcoally publish the generated TypeScript code:
 
