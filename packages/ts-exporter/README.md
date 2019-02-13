@@ -5,7 +5,7 @@ This module provides a Java Annotation Processor to generate and locally publish
 ##Building
 mvn clean install
 
-#Usage
+##Usage
 Simply add its dependency on an existing Maven module and the Annotation Processor present will scan for `@Remote`- and `@Portable`-annotated classes. 
 
 For `lib` modules, files containing the Full Qualified Class Names (fqcn) of the annotated types will be created.
