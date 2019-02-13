@@ -18,12 +18,12 @@ Simply add its dependency on an existing Maven module and the Annotation Process
 - For `app` modules, TypeScript code will be generated and published to your local NPM registry running on `http://localhost:4873`. `@Portable` classes will be present on `@kiegroup-ts-generated/[my-module]` and `@Remote` ones will be on `@kiegroup-ts-generated/[my-module]-rpc`. 
 
 > **NOTE:** We recommend using [verdaccio](https://github.com/verdaccio/verdaccio) as your local npm registry. To install it simply run `npm install -g verdaccio`. To run it, simply run `verdaccio`. The `app` module must have at least one class annotated with `@EntryPoint`, `@Portable`, or `@Remote`.
-
+>
 > **NOTE:** `app` modules require a special configuration to actually generate and lcoally publish the generated TypeScript code:
-
->> **ts-exporter-output-dir** must be configured with the directory where the root of generated code will be.
-
->> **ts-exporter** must be set to "export".
+>
+>-  **ts-exporter-output-dir** must be configured with the directory where the root of generated code will be.
+>
+> - **ts-exporter** must be set to "export".
 
 The following Maven profile configuration is recommended.
 ```xml
