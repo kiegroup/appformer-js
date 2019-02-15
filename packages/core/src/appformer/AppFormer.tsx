@@ -18,6 +18,7 @@ import * as React from "react";
 import { Element } from "../core";
 import { Screen } from "./Screen";
 import { Perspective } from "./Perspective";
+import {Portable} from "../marshalling";
 
 /**
  * AppFormer.js public API.
@@ -58,7 +59,7 @@ export class AppFormer {
    * Arbitrary arguments to be used by the component
    */
   // tslint:disable-next-line
-  public goTo(af_componentId: string, args?: any): void {}
+  public goTo(af_componentId: string, args?: Map<string, any>): void {}
 
   /**
    * Translates a bundle key
@@ -90,7 +91,7 @@ export class AppFormer {
    * The event object.
    */
   // tslint:disable-next-line
-  public fireEvent(obj: any): void {}
+  public fireEvent<T>(obj: Portable<T>): void {}
 
   /**
    * Executes an RPC call to an Errai Remote.
@@ -99,7 +100,7 @@ export class AppFormer {
    * @param args
    * The arguments to this RPC
    */
-  public rpc(path: string, args: any[]): Promise<string> {
+  public rpc(path: string, args: Array<Portable<any>>): Promise<string> {
     throw new Error("Not implemented");
   }
 
