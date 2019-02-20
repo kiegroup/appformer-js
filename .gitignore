@@ -4,9 +4,3 @@
 **/*.iml
 **/*.log
 **/package-lock.json
-
-**/node_modules
-**/target
-**/dist
-
-**/kiegroup-all

@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-import { AppFormer}  from "./AppFormer";
+import { AppFormer } from "./AppFormer";
 import { Element } from "../core";
 import { findChildContainers } from "../util";
 import { Component } from "./Component";
 import { Perspective } from "./Perspective";
 import { Screen } from "./Screen";
-import {Portable} from "../marshalling";
+import { Portable } from "../marshalling";
 
 export * from "./AppFormer";
 export * from "./Components";

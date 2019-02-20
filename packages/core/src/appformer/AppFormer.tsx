@@ -18,14 +18,13 @@ import * as React from "react";
 import { Element } from "../core";
 import { Screen } from "./Screen";
 import { Perspective } from "./Perspective";
-import {Portable} from "../marshalling";
+import { Portable } from "../marshalling";
 
 /**
  * AppFormer.js public API.
  *
  */
 export class AppFormer {
-
   /**
    * Starts an AppFormer instance.
    * @param container

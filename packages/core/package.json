@@ -7,7 +7,7 @@
   "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tiagobento/appformer-js.git"
+    "url": "https://github.com/kiegroup/appformer-js.git"
   },
   "dependencies": {
     "@types/react": "^16.4.18",
@@ -19,7 +19,7 @@
   "scripts": {
     "lint": "tslint -c ../../tslint.common.json 'src/**/*.{ts,tsx,js,jsx}'",
     "test": "jest",
-    "init": "yarn -f --registry http://localhost:4873 --no-lockfile",
+    "init": "yarn -f",
     "republish-local": "npm unpublish --force -reg http://localhost:4873 && npm publish -reg http://localhost:4873",
     "build": "yarn run lint && npm test && webpack --mode production"
   },

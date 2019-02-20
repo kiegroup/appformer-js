@@ -87,11 +87,9 @@ describe("marshall", () => {
 
     const output = new JavaHashMapMarshaller().marshall(input, new MarshallingContext());
 
-    const expectedKey1 = `${json +
-      JSON.stringify(new NumValBasedErraiObject(JavaType.INTEGER, 11).asErraiObject())}`;
+    const expectedKey1 = `${json + JSON.stringify(new NumValBasedErraiObject(JavaType.INTEGER, 11).asErraiObject())}`;
 
-    const expectedKey2 = `${json +
-      JSON.stringify(new NumValBasedErraiObject(JavaType.INTEGER, 21).asErraiObject())}`;
+    const expectedKey2 = `${json + JSON.stringify(new NumValBasedErraiObject(JavaType.INTEGER, 21).asErraiObject())}`;
 
     expect(output).toStrictEqual({
       [encodedType]: JavaType.HASH_MAP,
@@ -110,8 +108,7 @@ describe("marshall", () => {
 
     const output = new JavaHashMapMarshaller().marshall(input, new MarshallingContext());
 
-    const expectedKey1 = `${json +
-      JSON.stringify(new NumValBasedErraiObject(JavaType.BOOLEAN, true).asErraiObject())}`;
+    const expectedKey1 = `${json + JSON.stringify(new NumValBasedErraiObject(JavaType.BOOLEAN, true).asErraiObject())}`;
 
     const expectedKey2 = `${json +
       JSON.stringify(new NumValBasedErraiObject(JavaType.BOOLEAN, false).asErraiObject())}`;

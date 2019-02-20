@@ -14,9 +14,7 @@
  * limitations under the License.
  */
 
-import {initSingleton} from "./appformer";
-
-
+import { initSingleton } from "./appformer";
 
 export * from "./appformer";
 export * from "./marshalling";
